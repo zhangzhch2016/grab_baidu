@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <title>爬取百度列表</title>
         <meta charset='utf-8' />
         <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
-        <script src="http://114.215.71.127:8888/baidu/jquery.js"></script>
+        <scriptsrc="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="crossorigin="anonymous"></script>
 
     </head>
     <body style="margin:0 auto">
@@ -114,27 +114,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                     }
                     var get_val = 'search=' + search + '&page=' + page + '&isPhone=' + isPhone
                     websockt(get_val);
-                    //  $.ajax({
-                    //     type: "POST",
-                    //     url: "http://114.215.71.127:8888/baidu/index.php",
-
-                    //     data: {search: search, page: page, isPhone: isPhone},
-                    //     dataType: "json",
-                    //     beforeSend: function(){
-                    //         $("input[name=sub]").attr("disabled","disabled");
-                    //         $("#connect").text("正在抓取, 不要重新提交,抓取完成后手动刷新浏览器可以再次抓取");
-
-                    //         websockt();
-                    //     },
-                    //     success: function (data) {
-                    //         if(data.code == 200) {
-                    //             $("#connect").append("\r下载成功, 点击下载立刻下载");
-                    //             $("#address").attr("href",data.url);
-                    //             $("#address").css("display","inline");
-
-                    //         }
-                    //     }
-                    // });
                 }
 
                 function websockt(data){
